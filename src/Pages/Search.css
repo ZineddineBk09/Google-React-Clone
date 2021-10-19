@@ -1,0 +1,33 @@
+.homePage__bodySearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid rgba(175, 166, 166, 0.7);
+  width: 50%;
+  max-width: 700px;
+  border-radius: 99px;
+  margin-top: 20px;
+  height: fit-content;
+}
+.homePage__bodySearch__input {
+  height: 25px;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+  flex: 1;
+  color: black;
+}
+.homePage__bodySearch__icon {
+  color: rgba(175, 166, 166, 0.9);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+.homePage__bodySearch {
+
+  padding: 5px 10px;
+  width: 80%;
+
+}
+}

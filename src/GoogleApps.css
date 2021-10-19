@@ -1,0 +1,45 @@
+.googleApps::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.googleApps::-webkit-scrollbar-thumb {
+  background-color: rgb(128, 128, 128,0.3); 
+  border-radius: 20px;
+ }
+.googleApps {
+ z-index: 100;
+ position: absolute;
+ align-self: flex-end;
+  max-height: 50vh;
+  width: 270px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px black;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  margin-top: 3rem;
+
+}
+.googleApps > a {
+ padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  /* margin: 1rem 5px; */
+}
+.googleApps > a > img {
+  height: 30px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.googleApps > a:hover {
+background-color: rgb(212, 214, 247,0.3);
+border-radius: 10px;
+}

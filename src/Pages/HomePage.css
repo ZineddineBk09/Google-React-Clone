@@ -1,0 +1,103 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.homePage__header {
+  display: flex;
+  justify-content: space-between;
+}
+.homePage__headerLeft {
+  display: flex;
+  align-items: center;
+}
+.homePage__headerRight {
+  display: flex;
+  align-items: center;
+  padding-right: 0rem !important;
+}
+
+.homePage__headerRight > a,
+.homePage__headerLeft > a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+.homePage__headerRight > a:hover,
+.homePage__headerLeft > a:hover {
+  text-decoration: underline;
+}
+.homePage__headerRight__icon {
+  margin-right: 1.2rem;
+  box-sizing: border-box;
+}
+.homePage__headerRight__icon:hover {
+  border: 5px solid rgba(90, 83, 83, 0.1);
+  transform: scale(1.3);
+  border-radius: 50%;
+}
+
+/* _________________________________________________________ */
+.homePage__body {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage__body > img {
+  height: 110px;
+  object-fit: contain;
+  max-width: 700px;
+}
+
+.homePage__bodyButtons {
+  margin: 2rem;
+}
+.homePage__bodyButtons > button {
+  border: none;
+  outline: none;
+  padding: 0 0.9rem;
+  margin: 0 10px;
+  height: 45px;
+  background-color: rgb(238, 238, 238, 0.3);
+}
+.homePage__bodyButtons > button:hover {
+  border-radius: 5px;
+  border: 1px solid rgb(128, 128, 128, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.homePage__body>form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .homePage__headerRight > a,
+  .homePage__headerLeft > a {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .homePage__headerRight__icon {
+    height: 10px;
+    margin: 5px;
+  }
+
+  .homePage__headerRight__icon:hover {
+    border: none !important;
+    transform: none;
+  }
+
+  .homePage__body > img {
+    height: 80px;
+  }
+
+  .homePage__bodyButtons {
+    display: flex;
+  }
+  .homePage__bodyButtons > button {
+    padding: 0.8rem;
+    height: 35px;
+    font-size: 9px;
+  }
+}
